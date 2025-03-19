@@ -7,7 +7,7 @@ type Proxy = {
   protocol: string;
   ip: string;
   port: number;
-  https: false;
+  https: boolean;
   anonymity: string;
   score: number;
   geolocation: {
