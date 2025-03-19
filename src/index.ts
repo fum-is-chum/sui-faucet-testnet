@@ -16,7 +16,7 @@ type Proxy = {
   };
 };
 
-const readFile = (path: string = "src/acc_idx.txt") => {
+const readFile = (path: string) => {
   return +fs.readFileSync(path, {
     encoding: "utf-8",
   });
@@ -25,7 +25,7 @@ const readFile = (path: string = "src/acc_idx.txt") => {
 let lastProxyIdx = readFile("src/proxy_idx.txt");
 console.log(`Last proxy index: ${lastProxyIdx}`);
 
-const writeFile = (idx: number, path: string = "src/acc_idx.txt") => {
+const writeFile = (idx: number, path: string) => {
   fs.writeFileSync(path, idx.toString());
 };
 
