@@ -85,7 +85,7 @@ const requestToken = async (recipient: string, proxies: Proxy[], batchSize: numb
 const main = async () => {
   const proxies = loadProxies();
   const limit = proxies.length;
-  const sender = "0x61819c99588108d9f7710047e6ad8f2da598de8e98a26ea62bd7ad9847f5329c"; // adjust accordingly
+  const sender = ""; // adjust accordingly
   console.log(`Wallet Address: ${sender}`);
 
   try {
